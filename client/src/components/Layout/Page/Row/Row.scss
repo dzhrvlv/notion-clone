@@ -1,0 +1,58 @@
+.row {
+  &__container {
+    position: relative;
+    width: 100%;
+    margin: 1px;
+
+    font-size: inherit;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    background: inherit;
+
+    &:hover {
+      .row__options {
+        button {
+          color: rgba(55, 53, 47, 0.4);
+        }
+      }
+    }
+  }
+
+  &__field {
+    background: none;
+    overflow-y: hidden;
+    box-sizing: content-box;
+    resize: none;
+    width: 100%;
+    height: auto;
+    border: none !important;
+    outline: none !important;
+
+    padding: 3px 2px;
+
+    font-size: 16px !important;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  &__checkbox {
+  }
+
+  &__options {
+    position: absolute;
+    left: 0;
+    margin-left: -45px;
+
+    button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 25px;
+    }
+  }
+}
